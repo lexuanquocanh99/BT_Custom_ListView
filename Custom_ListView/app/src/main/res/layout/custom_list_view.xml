@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#55acee"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp">
+
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/music"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"
+        android:text="Chân Ái"
+        android:textSize="25sp"
+        android:textColor="#040404"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:textSize="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:text="Orange, Khói"/>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:gravity="right"
+        android:text="4:22"
+        android:layout_marginRight="50dp"
+        android:textSize="20dp"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
